@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="roof" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)"/>
+  
+  <!-- Outer Store Container -->
+  <g filter="url(#shadow)" transform="translate(64, 70)">
+    <!-- Shop Awning / Roof stripes -->
+    <path d="M 32 100 L 70 30 L 314 30 L 352 100 Z" fill="#ffffff" />
+    <path d="M 70 30 L 110 30 L 98 100 L 58 100 Z" fill="#ea580c" />
+    <path d="M 150 30 L 190 30 L 178 100 L 138 100 Z" fill="#ea580c" />
+    <path d="M 230 30 L 270 30 L 258 100 L 218 100 Z" fill="#ea580c" />
+    <path d="M 310 30 L 314 30 L 338 100 L 298 100 Z" fill="#ea580c" />
+
+    <!-- Awning Scallops -->
+    <circle cx="58" cy="100" r="20" fill="#ea580c" />
+    <circle cx="98" cy="100" r="20" fill="#ffffff" />
+    <circle cx="138" cy="100" r="20" fill="#ea580c" />
+    <circle cx="178" cy="100" r="20" fill="#ffffff" />
+    <circle cx="218" cy="100" r="20" fill="#ea580c" />
+    <circle cx="258" cy="100" r="20" fill="#ffffff" />
+    <circle cx="298" cy="100" r="20" fill="#ea580c" />
+    <circle cx="338" cy="100" r="20" fill="#ffffff" />
+
+    <!-- Main Store Body -->
+    <rect x="52" y="105" width="280" height="200" rx="16" fill="#ffffff" />
+    
+    <!-- Doorway -->
+    <rect x="156" y="165" width="72" height="140" rx="8" fill="#15803d" />
+    <circle cx="212" cy="235" r="5" fill="#fef08a" />
+    
+    <!-- Left Display Window with Rupees -->
+    <rect x="76" y="135" width="60" height="70" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="3" />
+    <!-- Rupee symbol -->
+    <text x="106" y="180" font-family="sans-serif" font-weight="900" font-size="36" text-anchor="middle" fill="#047857">₹</text>
+
+    <!-- Right Display Window with Growth Arrow -->
+    <rect x="248" y="135" width="60" height="70" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="3" />
+    <path d="M 264 185 L 285 160 L 294 168 L 302 148 L 282 152 L 290 160 L 272 180 Z" fill="#ea580c" />
+
+    <!-- Store Counter Platform -->
+    <rect x="36" y="295" width="312" height="24" rx="10" fill="#f1f5f9" />
+  </g>
+
+  <!-- Star / Sparkle badge at top right -->
+  <g transform="translate(380, 80)">
+    <circle cx="0" cy="0" r="32" fill="#fbbf24" filter="url(#shadow)" />
+    <path d="M 0 -22 L 6 -6 L 22 0 L 6 6 L 0 22 L -6 6 L -22 0 L -6 -6 Z" fill="#ffffff" />
+  </g>
+</svg>
